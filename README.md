@@ -11,6 +11,8 @@ true.
 ~~~
 
 ## Theoretical Mappings
+Every time a new row is added, the fate and outcome is mapped in a columnar equalivant to the amount of fates or outcomes. For example:
+
 ~~~
 0 Charlotte Dies            0 Never Dates Player
 1 Charlotte Fate Unknown    1 Relationship Is Unknown
@@ -31,3 +33,7 @@ Charlotte Fate Unknown, Dates Player            [ 1, 2 ] charlotte(unknown_fate)
 Charlotte Lives, Never Dates Player             [ 2, 0 ] charlotte(alive) :- player(charlotte, not_dating).        [ outcome6.pl ]
 Charlotte Lives, Relationship Is Unknown        [ 2, 2 ] charlotte(alive) :- relationship(unknown).                [ outcome7.pl ]
 ~~~
+
+A three row list is 3x3 minus 2 ( that's 7 ) outcomes.. A four row list is 4x4 minus 2 ( that's 14 ) outcomes, ad infinitum.
+
+I don't recommend mappihng more than 8x8 minus two possible imagined paths.
