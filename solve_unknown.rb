@@ -10,5 +10,6 @@ open("_imaginedpath/outcomes/nuetral_outcome.pl", "w") { |f|
   segment_1 = character_fate[1].strip
   segment_2 = dating_outcome[0].strip
 
+  f.puts segment_2
   f.puts "#{segment_1} :- #{segment_2}"
 }
