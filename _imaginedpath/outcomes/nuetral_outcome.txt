@@ -1,1 +1,0 @@
-charlotte(alive) :- player(charlotte, dating).
